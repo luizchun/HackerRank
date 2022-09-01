@@ -14,6 +14,6 @@ DECLARE @STR AS VARCHAR(50) = '* * * * * * * * * * * * * * * * * * * *';
 
 WHILE @cnt != 0
 BEGIN
-   SELECT SUBSTRING(@STR, 1, @cnt*2) AS ExtractString;
+   SELECT SUBSTRING(@STR, 1, @cnt*2) AS Result;
    SET @cnt = @cnt - 1;
 END;
